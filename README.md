@@ -4,8 +4,11 @@ pic2wall periodically fetches images from the web and applies them as Desktop Wa
 
 It is widely configurable through a friendly and easy-to-use GUI and provides diagnostic tools to help you out with app setup and troubleshooting should any connection-related issues arise. Multiple image formats are supported as well as persistent configs allowing import and export.
 
-**Build & run instructions**
+**Build & run**
 
+If you wish to test out the app straight away, get it from the [app's page](https://mikrob.it/pic2wall_app_detail.html) on [mikrob.it](https://mikrob.it).
+
+Alternatively:
 * Clone & build
 * Copy the resources folder and its contents to the folder where the pic2wall.exe resides
 * Execute pic2wall.exe, interact with the app through the GUI
