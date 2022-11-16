@@ -17,7 +17,7 @@ Alternatively:
 
 * Application logs are stored at log/pics2wall.log or directly accessible from the application's Diagnostic Tools
 * Connection to the target image can be tested using the provided Diagnostic tools
-* Be patient, the update "ticks" in 5 second intervals, There may be a few second wait time before the update / test fetch is initiated
+* Be patient, the update "ticks" in 5 second intervals, there may be a few second wait time before the update / test fetch is initiated
 * Use update intervals adequate to your image source
 
 **Screenshots**
