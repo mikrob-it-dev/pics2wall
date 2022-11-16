@@ -1,6 +1,8 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use crate::utils::{fetch_pic, set_pic_as_wallpaper, start_logging};
+use crate::log_utils::start_logging;
+use crate::common_utils::{fetch_pic};
+use crate::windows_os_utils::{set_pic_as_wallpaper};
 use app_constants::AppConstants;
 use app_gui::MyApp;
 use egui::Vec2;
@@ -9,7 +11,9 @@ use std::{fs::create_dir, io::ErrorKind, thread, time};
 mod app_config;
 mod app_constants;
 mod app_gui;
-mod utils;
+mod log_utils;
+mod windows_os_utils;
+mod common_utils;
 
 fn main() {
     start_logging();

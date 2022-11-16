@@ -1,10 +1,11 @@
 use crate::{
     app_config::AppConfig,
     app_constants::AppConstants,
-    utils::{
-        build_absolute_path, clear_background, get_current_background_color, is_image_url_valid,
-        load_image_from_path, set_background_color,
-    },
+    log_utils,
+    common_utils::{
+        get_current_background_color, is_image_url_valid,
+        load_image_from_path,
+    }, windows_os_utils::{set_background_color, clear_background},
 };
 use egui::{Align2, Context, Label, Ui, Vec2};
 use egui_extras::RetainedImage;
@@ -287,7 +288,6 @@ fn ui_add_controls(ui: &mut Ui, my_app: &mut MyApp) {
         });
 
     ui.add_space(15.0);
-
 }
 
 fn ui_add_diagnostic_tools(ui: &mut Ui, my_app: &mut MyApp, _frame: &mut eframe::Frame) {
@@ -318,15 +318,7 @@ fn ui_add_diagnostic_tools(ui: &mut Ui, my_app: &mut MyApp, _frame: &mut eframe:
                 let button_handle = ui.add(button);
 
                 if button_handle.clicked() {
-                    match std::process::Command::new("notepad")
-                        .arg(build_absolute_path(AppConstants::LOG_FILE_LOCATION))
-                        .output()
-                    {
-                        Ok(_) => {}
-                        Err(_) => {
-                            log::error!("Unable to open notepad to access application logs")
-                        }
-                    };
+                    log_utils::open_logs_externally();
                 }
             });
         });

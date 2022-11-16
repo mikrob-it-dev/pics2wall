@@ -3,7 +3,7 @@ pub struct AppConstants {}
 
 impl AppConstants {
     // app info
-    pub const APP_NAME: &str = "pic2wall";
+    pub const APP_NAME: &str = "pics2wall";
     pub const APP_VERSION: &str = "v0.1 (experimental)";
     pub const APP_DEVELOPER: &str = "mikrob";
     pub const APP_DEVELOPER_WEBSITE: &str = "http://mikrob.it";
@@ -21,7 +21,7 @@ impl AppConstants {
     pub const IN_PROGRESS_TEST_IMAGE_FILE_LOCATION: &str =
         r#"resources\in_progress_fetch_status_test_page.jpg"#;
     pub const CONFIG_FILE_LOCATION: &str = "config.json";
-    pub const LOG_FILE_LOCATION: &str = "log/pic2wall.log";
+    pub const LOG_FILE_LOCATION: &str = "log/";
 
     // TODO: format better
     pub const LICENSE_TEXT: &str =
