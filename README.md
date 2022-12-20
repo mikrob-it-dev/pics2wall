@@ -6,7 +6,7 @@ It is widely configurable through a friendly and easy-to-use GUI and provides di
 
 **Build & run**
 
-If you wish to test out the app straight away, get it from the [app's page](https://mikrob.it/pics2wall_app_detail.html) on [mikrob.it](https://mikrob.it).
+If you wish to test out the app straight away, get it from the [app's page](https://www.mikrob.it/pics2wall_app_detail.php) on [mikrob.it](https://www.mikrob.it).
 
 Alternatively:
 * Clone & build
